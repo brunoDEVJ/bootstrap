@@ -1,7 +1,3 @@
-import cors from 'cors'
- 
-app.use(cors())
-
 (function () {
     function navegarViaAjax(hash) {
         if (!hash) return
@@ -10,7 +6,7 @@ app.use(cors())
         if(!link) return
 
         const destino = document.querySelector('[wm-link-destino]')
-
+            
         const url = hash.substring(1)
         fetch(url)
             .then(resp => resp.text())
