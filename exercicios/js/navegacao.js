@@ -1,3 +1,7 @@
+import cors from 'cors'
+ 
+app.use(cors())
+
 (function () {
     function navegarViaAjax(hash) {
         if (!hash) return
@@ -18,6 +22,7 @@
                 }
             })
     }
+
     function configurarLinks() {
         document.querySelectorAll('[wm-link]')
             .forEach(link => {
