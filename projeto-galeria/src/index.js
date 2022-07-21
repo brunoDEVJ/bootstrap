@@ -1,5 +1,5 @@
 // Arquivos SASS
-import './scss/index.scss'
+import styles from './scss/index.scss'
 
 // Dependencias
 import 'jquery'
